@@ -1,0 +1,25 @@
+{
+    "name": "shoottler/hello-world-module",
+    "description": "This is a boiler plate for a shoottler module",
+    "authors": [
+        {
+            "name": "Angel Formica",
+            "email": "angelformica@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\HelloWorld\\Providers\\HelloWorldServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\HelloWorld\\": ""
+        }
+    }
+}

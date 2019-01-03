@@ -1,0 +1,52 @@
+{
+    "name": "hello-world-module",
+    "version": "0.1.0",
+    "main": "./Resources/assets/src/js/module.js",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "lint": "eslint --ext .js,.vue resources/assets/js/ ./*.js",
+        "lint-css": "stylelint \"resources/assets/sass/**/*.scss\"",
+        "fix": "eslint --ext .js,.vue resources/assets/js/ ./*.js --fix",
+        "fix-css": "stylelint \"resources/assets/sass/**/*.scss\" --fix",
+        "lint-full": "npm run lint && npm run lint-css",
+        "fix-full": "npm run fix && npm run fix-css"
+    },
+    "engines": {
+        "node": ">= 8.9.4",
+        "npm": ">= 5.6.0"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "babel-eslint": "^8.2.6",
+        "babel-plugin-wildcard": "^5.0.0",
+        "babel-preset-stage-2": "^6.24.1",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "cross-env": "^5.1",
+        "eslint": "^4.19.1",
+        "eslint-config-adenvt": "^1.1.0",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.8.0",
+        "eslint-plugin-standard": "^3.1.0",
+        "eslint-plugin-unicorn": "^4.0.3",
+        "eslint-plugin-varspacing": "^1.2.1",
+        "eslint-plugin-vue": "^4.7.1",
+        "laravel-mix": "^4.0.0-beta.2",
+        "laravel-mix-merge-manifest": "^0.1.1",
+        "pre-commit": "^1.2.2",
+        "prettier": "1.13.7",
+        "sass": "^1.15.2",
+        "stylelint": "^9.9.0",
+        "stylelint-config-sass-guidelines": "^5.2.0",
+        "stylelint-scss": "^3.4.0",
+        "webpack": "^4.26.1",
+        "webpack-cli": "^3.1.2"
+    }
+}
