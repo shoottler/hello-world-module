@@ -5,8 +5,7 @@
 ## Install
 
 ```
-cd Modules
-git clone https://github.com/shoottler/hello-world-module.git YOUR-MODULE-S-NAME
+composer require shoottler/hello-world-module dev-master
 ```
 
 ## Usage
