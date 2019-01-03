@@ -7,6 +7,7 @@
             "email": "angelformica@gmail.com"
         }
     ],
+    "type" : "laravel-module",
     "extra": {
         "laravel": {
             "providers": [
@@ -21,5 +22,8 @@
         "psr-4": {
             "Modules\\HelloWorld\\": ""
         }
+    },
+    "require": {
+        "joshbrw/laravel-module-installer": "^0.1.4"
     }
 }
